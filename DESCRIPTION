@@ -1,0 +1,12 @@
+Package: RFOPT
+Type: Package
+Title: Random Forest Optimisation
+Version: 0.1
+Date: 2015-11-23
+Author: Tom Wilson <tpw2@aber.ac.uk>
+Maintainer: Tom Wilson <tpw2@aber.ac.uk>
+Description: Exhaustive, grid search optimsation of parameters for random forest classification (binatry & multinomial)
+Depends: randomForest, ranger, pryr, parallel
+Suggests: testthat
+License: GPL (>=2)
+LazyData: TRUE
