@@ -1,11 +1,11 @@
-Package: RFOPT
+Package: forestTools
 Type: Package
-Title: Random Forest Optimisation
+Title: Tools for enhancing randomForest's
 Version: 0.1
 Date: 2015-11-23
 Author: Tom Wilson <tpw2@aber.ac.uk>
 Maintainer: Tom Wilson <tpw2@aber.ac.uk>
-Description: Optimsation and evaluation of  parameters for random forest classification and regression models
+Description: Tools and functions for enhancing randomForest models including; optimisation, robust cross validation, feature selection and visualisation 
 Depends: randomForest, ranger, pryr, parallel
 Imports: cvTools
 Suggests: testthat
