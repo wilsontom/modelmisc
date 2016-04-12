@@ -5,9 +5,9 @@ Version: 0.1
 Date: 2015-11-23
 Author: Tom Wilson <tpw2@aber.ac.uk>
 Maintainer: Tom Wilson <tpw2@aber.ac.uk>
-Description: Tools and functions for enhancing randomForest models including; optimisation, robust cross validation, feature selection and visualisation 
-Depends: randomForest, ranger, pryr, parallel
-Imports: cvTools
+Description: Tools and functions for enhancing randomForest models including; optimisation, robust cross validation, feature selection and visualisation
+Imports: Rcpp
+LinkingTo: Rcpp
 Suggests: testthat
 License: GPL (>=2)
 LazyData: TRUE
