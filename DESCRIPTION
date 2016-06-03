@@ -1,13 +1,14 @@
 Package: forestTools
 Type: Package
 Title: Tools for enhancing randomForest's
-Version: 0.1
+Version: 0.0.1
 Date: 2015-11-23
 Author: Tom Wilson <tpw2@aber.ac.uk>
 Maintainer: Tom Wilson <tpw2@aber.ac.uk>
 Description: Tools and functions for enhancing randomForest models including; optimisation, robust cross validation, feature selection and visualisation
-Imports: Rcpp
+Depends: magrittr
+Imports: Rcpp, dplyr
 LinkingTo: Rcpp
 Suggests: testthat
-License: GPL (>=2)
+License: GPL (>=3)
 LazyData: TRUE
