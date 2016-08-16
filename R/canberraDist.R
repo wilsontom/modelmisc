@@ -1,14 +1,17 @@
 #' Canberra Distance
 #'
-#' Calculate the Canberra Distance between two vectors of feature ranks. Vectors must be of equal lengths.
+#' Calculate the Canberra Distance between two vectors of feature ranks. Input vectors must both be numeric and have equal
+#' cardinality.
 #'
-#' @param x a character vector of features
-#' @param y a second character vector of features
-#' @param scale logical; if \code{TRUE} then the canberra distance is scaled by the maximum possible distance
-#' to give value between 0 and 1. 0 = no similiarity, 1 = vectors are identical.
+#' @param x a numeric vector
+#' @param y a numeric vector
+#' @param scale logical; if \code{TRUE} then the canberra distance is scaled by the 1 - (maximum possible distance)
+#' to give value between 0 and 1. 0 = vectors are identical, 1 = no similiarity
 #' @return a numeric value for the canberra distance
 #'
-#' @author Tom Wilson <tpw2@@aber.ac.uk>
+#' @author Tom Wilson \email{tpw2@@aber.ac.uk}
+#' @references Jurman, G., Merler, S., Barla, A., Paoli, S., Galea, A., Furlanello, C., 2008. \emph{Algebraic
+#' stability indicators for ranked lists in molecular profiling}. Bioinformatics 24 (2):258–264
 #' @export
 
 canberraDist <- function(x,y, scale = TRUE)

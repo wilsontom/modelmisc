@@ -1,12 +1,15 @@
 #' Jaccard's Similiarity
 #'
-#' Calculate the Jaccard's Similiarity (or Taminoto Distance) between two subsets of features
+#' Calculate the Jaccard's Similiarity (or Taminoto Distance) between feature vectors
 #'
-#' @param x a character vector of features
-#' @param y a second character vector of features
-#' @return a numeric value for the jaccard's similiarity (betwene 0 and 1)
+#' @param x a character vector
+#' @param y a character vector
+#' @return a numeric value for the Jaccard's Similiarity Coefficent
 #'
-#' @author Tom Wilson <tpw2@@aber.ac.uk>
+#' @author Tom Wilson \email{tpw2@@aber.ac.uk}
+#' @references
+
+
 #' @export
 
 jaccardsIndex <- function(x,y)

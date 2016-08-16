@@ -1,13 +1,15 @@
-#' Hamming Distance
+#' Relative Hamming Distance
 #'
-#' Calculate the relative hamming distance between two subsets of features
+#' Calculate the Relative Hamming Distance between two feaure vectors
 #'
-#' @param x a character vector of features
-#' @param y a second character vector of features
+#' @param x a character vector
+#' @param y a character vector o
 #' @param m a numeric value for the total number of features in the dataset
-#' @return a numeric value for the hamming distance (betwene 0 and 1)
+#' @return a numeric value for the Relative Hamming Distance
 #'
-#' @author Tom Wilson <tpw2@@aber.ac.uk>
+#' @author Tom Wilson \email{tpw2@@aber.ac.uk}
+#' @references Dunne, K., Cunningham, P., Azuaje, F., 2002. \emph{Solutions to instability problems with
+#' sequential wrapper-based approaches to feature selection}. Technical Report,Department of Computer Science, Trinity College, Dublin.
 #' @export
 
 hammingDist <- function(x,y,m)
