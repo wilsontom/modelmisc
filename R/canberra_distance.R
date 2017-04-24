@@ -14,7 +14,7 @@
 #' stability indicators for ranked lists in molecular profiling}. Bioinformatics 24 (2):258–264
 #' @export
 
-canberraDist <- function(x,y, scale = TRUE)
+canberra_distance <- function(x,y, scale = TRUE)
   {
 
   cdist <- function(x,y)

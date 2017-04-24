@@ -12,7 +12,7 @@
 
 #' @export
 
-jaccardsIndex <- function(x,y)
+jaccards_index <- function(x,y)
   {
   if(!is.character(x)){
     stop("x input must be a character")

@@ -1,6 +1,6 @@
 
 
-ochiaisIndex <- function(x,y)
+ochiais_index <- function(x,y)
 {
   if(!is.character(x)){
     stop("x input must be a character")

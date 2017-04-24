@@ -12,7 +12,7 @@
 #' sequential wrapper-based approaches to feature selection}. Technical Report,Department of Computer Science, Trinity College, Dublin.
 #' @export
 
-hammingDist <- function(x,y,m)
+hammings_distance <- function(x,y,m)
   {
   if(!is.character(x)){
     stop("x input must be a character")

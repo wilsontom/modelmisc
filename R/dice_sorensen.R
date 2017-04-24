@@ -14,7 +14,7 @@
 #' Proceeding of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD’09),pp.567–575.
 #' @export
 
-diceSorensen <- function(x,y)
+dice_sorensen <- function(x,y)
 {
   if(!is.character(x)){
     stop("x input must be a character")

@@ -1,7 +1,7 @@
 
 
 
-percOverlap <- function(x,y)
+percentage_overlap <- function(x,y)
 {
   if(!is.character(x)){
     stop("x input must be a character")

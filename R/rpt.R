@@ -8,7 +8,7 @@
 #' @author Tom Wilson
 #' @export
 #'
-RPT <- function(stabilityMeasure, performanceMeasure, beta = 1)
+rpt <- function(stabilityMeasure, performanceMeasure, beta = 1)
   {
   if(length(stabilityMeasure) != 1){stop("...stability must be a numeric vale NOT a vector", call. = FALSE)}
   if(length(performanceMeasure) != 1){stop("...performance must be a numeric vale NOT a vector", call. = FALSE)}

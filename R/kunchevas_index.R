@@ -4,7 +4,7 @@
 
 
 
-kunchevasIndex <- function(x,y,m)
+kunchevas_index <- function(x,y,m)
 {
   if(!is.character(x)){
     stop("...x must be a character")
