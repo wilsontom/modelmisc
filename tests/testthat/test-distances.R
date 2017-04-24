@@ -1,7 +1,7 @@
 
-context("forestTools")
+context("feature stability")
 
-test_that("stability", {
+test_that("distances", {
 
   some_random_rank_a <- seq(1, 10)
   some_random_rank_b <- seq(1, 20)
