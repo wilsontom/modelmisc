@@ -9,3 +9,4 @@ Description: Various functions which are often used in high dimensionallity mode
 Suggests: testthat
 License: GPL (>=3)
 LazyData: TRUE
+RoxygenNote: 6.0.1
