@@ -5,7 +5,12 @@ Version: 0.0.1
 Date: 2017-04-24
 Author: Tom Wilson <tpw2@aber.ac.uk>
 Maintainer: Tom Wilson <tpw2@aber.ac.uk>
-Description: Various functions which are often used in high dimensionallity modelling scenarios.
+Description: Various wrapper functions which are often used in high dimensionallity modelling scenarios.
+Imports: dplyr,
+         caret,
+         randomForest,
+         AUC,
+         HandTill2001
 Suggests: testthat
 License: GPL (>=3)
 LazyData: TRUE
