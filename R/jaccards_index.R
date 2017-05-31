@@ -7,9 +7,7 @@
 #' @return a numeric value for the Jaccard's Similiarity Coefficent
 #'
 #' @author Tom Wilson \email{tpw2@@aber.ac.uk}
-#' @references
-
-
+#'
 #' @export
 
 jaccards_index <- function(x,y)

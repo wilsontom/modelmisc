@@ -7,11 +7,13 @@
 #' @return a numeric value for the Dice-Sorensen Index
 #'
 #' @author Tom Wilson \email{tpw2@@aber.ac.uk}
+#'
 #' @references Zucknick, M., Richardson, S., Stronach, E.A., 2008. \emph{Comparing the characteristics of
 #' gene expression profiles derived by univariate and multivariate classification
 #' methods}. Statistical Applications in Genetics and Molecular Biology 7 (1):7
 #' @references Loscalzo, S., Yu, L., Ding, C., 2009. \emph{Consensus group stable feature selection}. In:
-#' Proceeding of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD’09),pp.567–575.
+#' Proceeding of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'09),pp.567-575.
+#'
 #' @export
 
 dice_sorensen <- function(x,y)

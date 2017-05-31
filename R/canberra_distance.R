@@ -6,12 +6,14 @@
 #' @param x a numeric vector
 #' @param y a numeric vector
 #' @param scale logical; if \code{TRUE} then the canberra distance is scaled by the 1 - (maximum possible distance)
-#' to give value between 0 and 1. 0 = vectors are identical, 1 = no similiarity
+#' to give a value between 0 and 1. 1 = vectors are identical, 0 = no similiarity
 #' @return a numeric value for the canberra distance
 #'
 #' @author Tom Wilson \email{tpw2@@aber.ac.uk}
+#'
 #' @references Jurman, G., Merler, S., Barla, A., Paoli, S., Galea, A., Furlanello, C., 2008. \emph{Algebraic
-#' stability indicators for ranked lists in molecular profiling}. Bioinformatics 24 (2):258–264
+#' stability indicators for ranked lists in molecular profiling}. Bioinformatics 24 (2):258-264
+#'
 #' @export
 
 canberra_distance <- function(x,y, scale = TRUE)

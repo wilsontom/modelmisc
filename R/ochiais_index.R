@@ -1,4 +1,10 @@
-
+#' Ochiais Index
+#'
+#' Calculate  Ochiais Index between feature vectors
+#'
+#' @param x a character vector
+#' @param y a character vector
+#' @return a numeric value for Ochiais Index
 
 ochiais_index <- function(x,y)
 {

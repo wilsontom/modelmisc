@@ -1,5 +1,15 @@
-
-
+#' Percentage overlap
+#'
+#' Calculate the percentage of overlap between two feature vectors
+#'
+#' @param x a character vector
+#' @param y a character vector
+#' @return two numeric values. Value one is the percentage of \code{x} which overlaps with \code{y}.
+#' Value two is the percentage of \code{y} which overlaps with \code{x}
+#'
+#' @author Tom Wilson \email{tpw2@@aber.ac.uk}
+#'
+#' @export
 
 percentage_overlap <- function(x,y)
 {
@@ -15,8 +25,5 @@ percentage_overlap <- function(x,y)
   perc_x <- length(intersect(x,y)) / length(x)
   perc_y <- length(intersect(x,y)) / length(y)
 
-  if(dc  > 1 | dc < 0){
-    stop("Dice - Sorensen's index is not between 0 and 1", call. = FALSE)
-  }
-  return(c(perc_x, perc_r))
+  return(c(perc_x, perc_y))
 }
