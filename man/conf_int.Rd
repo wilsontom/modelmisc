@@ -4,7 +4,7 @@
 \alias{conf_int}
 \title{Confidence Interval}
 \usage{
-conf_int(x, ci)
+conf_int(x, ci = 0.975)
 }
 \arguments{
 \item{x}{a numeric vector}
