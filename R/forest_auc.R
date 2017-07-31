@@ -21,7 +21,7 @@ forest_auc <- function(model)
   }
 
   if(length(unique(model$y)) == 2){
-    auc <- AUC::auc(AUC::roc(model$votes, model$y))
+    auc <- AUC::auc(AUC::roc(model$predicted, model$y))
   }
 
   return(round(auc, digits = 3))
