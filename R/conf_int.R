@@ -8,7 +8,7 @@
 #'
 #' @export
 
-conf_int <- function(x,ci)
+conf_int <- function(x,ci = 0.975)
   {
 
   me <- mean(x)
