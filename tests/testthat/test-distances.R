@@ -25,12 +25,6 @@ test_that("distances", {
   expect_that(jaccards_index(some_random_vector_a,some_random_vector_b), is_less_than(1))
   expect_that(jaccards_index(some_random_vector_a,some_random_vector_b), is_more_than(0))
 
-  expect_error(kunchevas_index(some_random_rank_a,some_random_rank_b, m = 27))
-  expect_error(kunchevas_index(some_random_vector_a,some_random_vector_b, m = 27))
-  expect_error(kunchevas_index(some_random_vector_b,some_random_vector_c, m = 17), NA)
-  expect_that(kunchevas_index(some_random_vector_b,some_random_vector_c, m = 17), is_less_than(1))
-  expect_that(kunchevas_index(some_random_vector_b,some_random_vector_c, m = 17), is_more_than(-1))
-
   expect_error(ochiais_index(some_random_rank_a,some_random_rank_b))
   expect_error(ochiais_index(some_random_vector_a,some_random_vector_b), NA)
   expect_that(ochiais_index(some_random_vector_a,some_random_vector_b), is_less_than(1))
