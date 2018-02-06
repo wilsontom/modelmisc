@@ -14,19 +14,18 @@
 #'       \item{test_x} test data
 #'   }
 #'
-#' @author Tom Wilson \email{tpw2@@aber.ac.uk}
 #' @export
 
-strat_resamp <- function(x,cls,p)
-  {
+strat_resamp <- function(x, cls, p)
+{
   # balance checker + warning
 
   # use deparse warnings
-  if(nrow(x) != length(cls)){
+  if (nrow(x) != length(cls)) {
     stop("...class labels and data are not equal lengths", call. = FALSE)
   }
 
-  if(!is.numeric(p)){
+  if (!is.numeric(p)) {
     stop("...The partitioning size (p) must be a numeric value", call. = FALSE)
   }
 
@@ -34,15 +33,17 @@ strat_resamp <- function(x,cls,p)
 
   pn <- round(p * n_ch, digits = 0)
 
-  dat_df <- data.frame(ind = seq(from = 1, to = nrow(x), by = 1), class = cls, x)
+  dat_df <-
+    data.frame(ind = seq(from = 1, to = nrow(x), by = 1), class = cls, x)
 
-  p_ind <- data.frame(dat_df %>% dplyr::group_by(class) %>% dplyr::sample_n(pn))$ind
+  p_ind <-
+    data.frame(dat_df %>% dplyr::group_by(class) %>% dplyr::sample_n(pn))$ind
 
   dpart <- list()
   dpart$train_cls <- cls[p_ind]
-  dpart$train_x <- data.frame(x[p_ind,])
+  dpart$train_x <- data.frame(x[p_ind, ])
   dpart$test_cls <- cls[-p_ind]
-  dpart$test_x <- data.frame(x[-p_ind,])
+  dpart$test_x <- data.frame(x[-p_ind, ])
 
   return(dpart)
-  }
+}

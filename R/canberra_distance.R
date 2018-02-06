@@ -9,19 +9,16 @@
 #' to give a value between 0 and 1. 1 = vectors are identical, 0 = no similiarity
 #' @return a numeric value for the canberra distance
 #'
-#' @author Tom Wilson \email{tpw2@@aber.ac.uk}
-#'
 #' @references Jurman, G., Merler, S., Barla, A., Paoli, S., Galea, A., Furlanello, C., 2008. \emph{Algebraic
 #' stability indicators for ranked lists in molecular profiling}. Bioinformatics 24 (2):258-264
 #'
 #' @export
 
-canberra_distance <- function(x,y, scale = TRUE)
+canberra_distance <- function(x, y, scale = TRUE)
+{
+  cdist <- function(x, y)
   {
-
-  cdist <- function(x,y)
-  {
-    if(length(x) != length(y)){
+    if (length(x) != length(y)) {
       stop("...lengths of x & y must be identical", call.  = FALSE)
     }
 
@@ -31,9 +28,9 @@ canberra_distance <- function(x,y, scale = TRUE)
     return(can.dist)
   }
 
-  cd.res <- cdist(x,y)
+  cd.res <- cdist(x, y)
 
-  if(scale == TRUE){
+  if (scale == TRUE) {
     f.x <- rep(1:length(x), by = 1)
     f.y <- f.x[order(-f.x)]
     max.can <- cdist(f.x, f.y)
@@ -41,4 +38,4 @@ canberra_distance <- function(x,y, scale = TRUE)
     cd.res <- (cd.res / max.can)
   }
   return(as.numeric(1 - cd.res))
-  }
+}

@@ -9,11 +9,13 @@
 #' @export
 
 forest_kappa <- function(model)
-  {
-
-  if(class(model) != "randomForest"){
-    stop(deparse(substitute(model)), " must be a randomForest object", call. = FALSE)
+{
+  if (class(model) != "randomForest") {
+    stop(deparse(substitute(model)),
+         " must be a randomForest object",
+         call. = FALSE)
   }
-  kappa_stat <- caret::confusionMatrix(model$predicted, model$y)$overall[["Kappa"]]
+  kappa_stat <-
+    caret::confusionMatrix(model$predicted, model$y)$overall[["Kappa"]]
   return(as.numeric(round(kappa_stat), digits = 3))
-  }
+}

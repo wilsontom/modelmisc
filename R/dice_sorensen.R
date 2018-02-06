@@ -6,8 +6,6 @@
 #' @param y a character vector
 #' @return a numeric value for the Dice-Sorensen Index
 #'
-#' @author Tom Wilson \email{tpw2@@aber.ac.uk}
-#'
 #' @references Zucknick, M., Richardson, S., Stronach, E.A., 2008. \emph{Comparing the characteristics of
 #' gene expression profiles derived by univariate and multivariate classification
 #' methods}. Statistical Applications in Genetics and Molecular Biology 7 (1):7

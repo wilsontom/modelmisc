@@ -10,19 +10,21 @@
 #' @export
 
 forest_auc <- function(model)
-  {
-
-  if(class(model) != "randomForest"){
-    stop(deparse(substitute(model)), " must be a randomForest object", call. = FALSE)
+{
+  if (class(model) != "randomForest") {
+    stop(deparse(substitute(model)),
+         " must be a randomForest object",
+         call. = FALSE)
   }
 
-  if(length(unique(model$y)) > 2){
-    auc <- HandTill2001::auc(HandTill2001::multcap(model$y, model$votes))
+  if (length(unique(model$y)) > 2) {
+    auc <-
+      HandTill2001::auc(HandTill2001::multcap(model$y, model$votes))
   }
 
-  if(length(unique(model$y)) == 2){
+  if (length(unique(model$y)) == 2) {
     auc <- AUC::auc(AUC::roc(model$predicted, model$y))
   }
 
   return(round(auc, digits = 3))
-  }
+}

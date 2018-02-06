@@ -6,27 +6,25 @@
 #' @param y a character vector
 #' @return a numeric value for the Jaccard's Similiarity Coefficent
 #'
-#' @author Tom Wilson \email{tpw2@@aber.ac.uk}
-#'
 #' @export
 
-jaccards_index <- function(x,y)
-  {
-  if(!is.character(x)){
+jaccards_index <- function(x, y)
+{
+  if (!is.character(x)) {
     stop("x input must be a character")
   }
-  if(!is.character(y)){
+  if (!is.character(y)) {
     stop("y input must be a character")
   }
   x <- as.vector(na.omit(x))
   y <- as.vector(na.omit(y))
 
-  ji.in <- length(intersect(x,y))
-  ji.un <- length(union(x,y))
+  ji.in <- length(intersect(x, y))
+  ji.un <- length(union(x, y))
   ji <- ji.in / ji.un
 
-  if(ji  > 1 | ji < 0){
+  if (ji  > 1 | ji < 0) {
     stop("Jaacard index is not between 0,1")
   }
   return(ji)
-  }
+}
