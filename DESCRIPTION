@@ -11,7 +11,8 @@ Imports: dplyr,
          randomForest,
          AUC,
          HandTill2001
-Suggests: testthat
+Suggests: testthat,
+    covr
 License: GPL (>=3)
 LazyData: TRUE
 RoxygenNote: 6.0.1
