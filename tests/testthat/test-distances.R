@@ -35,11 +35,11 @@ test_that("distances", {
   expect_that(hammings_distance(some_random_vector_a,some_random_vector_b,m = 27), is_less_than(1))
   expect_that(hammings_distance(some_random_vector_a,some_random_vector_b,m = 27), is_more_than(0))
 
-  expect_error(rpt(some_random_vector_a,some_random_vector_b,beta = 1))
-  expect_error(rpt(some_random_rank_a,some_random_rank_b,beta = 1))
-  expect_error(rpt(0.5,1.5,beta = 1))
-  expect_error(rpt(1.5,0.5,beta = 1))
-  expect_error(rpt(0.75, 0.5, beta = 1), NA)
+  expect_error(RPT(some_random_vector_a,some_random_vector_b,beta = 1))
+  expect_error(RPT(some_random_rank_a,some_random_rank_b,beta = 1))
+  expect_error(RPT(0.5,1.5,beta = 1))
+  expect_error(RPT(1.5,0.5,beta = 1))
+  expect_error(RPT(0.75, 0.5, beta = 1), NA)
 
   }
 )
