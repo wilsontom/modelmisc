@@ -2,18 +2,18 @@
 % Please edit documentation in R/get_test_auc.R
 \name{get_test_auc}
 \alias{get_test_auc}
-\title{Calculate the test ROC-AUC}
+\title{Test ROC-AUC}
 \usage{
 get_test_auc(train_model, test_data, test_cls)
 }
 \arguments{
 \item{train_model}{a training model}
 
-\item{test_data}{a code{data.frame} of data for test predictions}
+\item{test_data}{a \code{data.frame} of data for test predictions}
 
 \item{test_cls}{a vector of class labels for \code{test_data}}
 }
 \description{
-Calculate the ROC-AUC using a training model and independant test-data. If classification is multinomial, then Hand and Till's (2001) method for multi-class AUC is used. If
+Clculate the ROC-AUC using a training model and independant test-data. If classification is multinomial, then Hand and Till's (2001) method for multi-class AUC is used. If
 classification is binary, then the standard ROC-AUC apprach is used.
 }

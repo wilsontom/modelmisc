@@ -17,6 +17,3 @@ a numeric value for the Jaccard's Similiarity Coefficent
 \description{
 Calculate the Jaccard's Similiarity (or Taminoto Distance) between feature vectors
 }
-\author{
-Tom Wilson \email{tpw2@aber.ac.uk}
-}

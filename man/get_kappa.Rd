@@ -19,6 +19,3 @@ a numeric value for Kappa
 \description{
 Get the overall interate agreement rate (Cohen's Kappa)
 }
-\author{
-Tom Wilson \email{tpw2@aber.ac.uk}
-}

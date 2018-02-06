@@ -25,6 +25,3 @@ a list of four elements
 \description{
 Create a training and test set, stratfied by \code{class}
 }
-\author{
-Tom Wilson \email{tpw2@aber.ac.uk}
-}

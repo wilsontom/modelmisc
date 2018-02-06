@@ -23,6 +23,3 @@ Calculate the Relative Hamming Distance between two feaure vectors
 Dunne, K., Cunningham, P., Azuaje, F., 2002. \emph{Solutions to instability problems with
 sequential wrapper-based approaches to feature selection}. Technical Report,Department of Computer Science, Trinity College, Dublin.
 }
-\author{
-Tom Wilson \email{tpw2@aber.ac.uk}
-}

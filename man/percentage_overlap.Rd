@@ -18,6 +18,3 @@ Value two is the percentage of \code{y} which overlaps with \code{x}
 \description{
 Calculate the percentage of overlap between two feature vectors
 }
-\author{
-Tom Wilson \email{tpw2@aber.ac.uk}
-}

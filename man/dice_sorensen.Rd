@@ -25,6 +25,3 @@ methods}. Statistical Applications in Genetics and Molecular Biology 7 (1):7
 Loscalzo, S., Yu, L., Ding, C., 2009. \emph{Consensus group stable feature selection}. In:
 Proceeding of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'09),pp.567-575.
 }
-\author{
-Tom Wilson \email{tpw2@aber.ac.uk}
-}

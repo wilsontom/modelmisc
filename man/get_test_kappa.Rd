@@ -9,7 +9,7 @@ get_test_kappa(train_model, test_data, test_cls)
 \arguments{
 \item{train_model}{a training model}
 
-\item{test_data}{a code{data.frame} of data for test predictions}
+\item{test_data}{a \code{data.frame} of data for test predictions}
 
 \item{test_cls}{a vector of class labels for \code{test_data}}
 }

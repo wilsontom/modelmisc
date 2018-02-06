@@ -25,6 +25,3 @@ cardinality.
 Jurman, G., Merler, S., Barla, A., Paoli, S., Galea, A., Furlanello, C., 2008. \emph{Algebraic
 stability indicators for ranked lists in molecular profiling}. Bioinformatics 24 (2):258-264
 }
-\author{
-Tom Wilson \email{tpw2@aber.ac.uk}
-}

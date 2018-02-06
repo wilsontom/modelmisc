@@ -2,15 +2,15 @@
 % Please edit documentation in R/proximity_to_mds.R
 \name{proximity_to_mds}
 \alias{proximity_to_mds}
-\title{Multi Dimensional Scaling (MDS) of randomForest proximities}
+\title{RF - MDS}
 \usage{
 proximity_to_mds(x)
 }
 \arguments{
-\item{x}{a `randomForest` object containing a valid proximity matrix}
+\item{x}{a \code{randomForest} object containing a valid proximity matrix}
 }
 \value{
-a `data.frame` of `cmdscale (1 - proxmimity)` for Dimension 1 and 2
+a \code{data.frame} of \code{cmdscale (1 - proxmimity)} for Dimension 1 and 2
 }
 \description{
 Multi Dimensional Scaling (MDS) of randomForest proximities
