@@ -13,6 +13,7 @@ r_packages:
   - covr
   - testthat
   - devtools
+  - caret
 
 
 after_success:
