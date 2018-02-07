@@ -10,5 +10,6 @@
 forest_accuracy <- function(model)
 {
   oob <- model$err.rate
-  return(1 - as.numeric(oob[nrow(oob), "OOB"][[1]]))
+  acc <- 1 - as.numeric(oob[nrow(oob), "OOB"][[1]])
+  return(round(acc, digits = 2))
 }
