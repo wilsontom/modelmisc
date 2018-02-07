@@ -1,5 +1,5 @@
 
-# modelmisc
+# modelmisc 
 
 >__miscellaneous modelling helpers__
 
@@ -9,7 +9,6 @@
 ```R
 devtools::install_github('wilsontom/modelmisc')
 ```
-
 
 #### Random Forest
 
@@ -32,4 +31,4 @@ devtools::install_github('wilsontom/modelmisc')
  * `canberra_distance`
 
 
-#### General
+
