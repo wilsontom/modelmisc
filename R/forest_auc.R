@@ -26,5 +26,5 @@ forest_auc <- function(model)
     auc <- AUC::auc(AUC::roc(model$predicted, model$y))
   }
 
-  return(round(auc, digits = 3))
+  return(round(auc, digits = 2))
 }
