@@ -12,7 +12,8 @@ Imports:
       randomForest,
       AUC,
       HandTill2001
-      ggplot2
+      ggplot2,
+      ggpubr
 Suggests: 
     testthat,
     covr
