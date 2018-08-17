@@ -2,6 +2,7 @@
 
 export(RPT)
 export(SEM)
+export(bland_altman_plot)
 export(canberra_distance)
 export(conf_int)
 export(dice_sorensen)
