@@ -1,11 +1,11 @@
 Package: modelmisc
 Type: Package
-Title: Miscellaneous tools for high dimensionality modelling
+Title: Miscellaneous tools for modelling
 Version: 0.1.0
 Date: 2018-01-06
 Author: Tom Wilson <tpw2@aber.ac.uk>
 Maintainer: Tom Wilson <tpw2@aber.ac.uk>
-Description: Various wrapper functions which are often used in high dimensionallity modelling scenarios.
+Description: Wrapper and helpers for modelling.
 Imports: 
       dplyr,
       caret,
