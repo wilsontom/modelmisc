@@ -11,7 +11,7 @@ Imports:
       caret,
       randomForest,
       AUC,
-      HandTill2001
+      HandTill2001,
       ggplot2,
       ggpubr
 Suggests: 
@@ -19,4 +19,4 @@ Suggests:
     covr
 License: GPL (>=3)
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
