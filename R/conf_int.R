@@ -16,9 +16,11 @@ conf_int <- function(x, ci = 0.975)
 
   error <- qt(as.numeric(ci), df = n - 1) * sdev / sqrt(n)
 
-  left <- me - error
-  right <- me + error
+  left <- round((me - error), digits = 3)
+  right <- round((me + error), digits = 3)
 
-  return(c(round(left, digits = 3), round(right, digits = 3)))
+  conf <- paste0('(', left, ',', right, ')')
+
+  return(conf)
 
 }
