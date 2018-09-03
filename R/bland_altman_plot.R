@@ -4,6 +4,8 @@
 #' @param y a numeric vector (B)
 #' @return a ggplot2 object
 #' @export
+#' @importFrom ggpubr ggscatter
+#' @importFrom ggplot2 geom_hline labs ggplot aes_string geom_tile scale_fill_gradient2 coord_fixed element_text theme theme_minimal
 
 
 bland_altman_plot <- function(x,y)

@@ -15,7 +15,7 @@
 #'   }
 #'
 #' @export
-
+#' @importFrom magrittr "%>%"
 strat_resamp <- function(x, cls, p)
 {
   # balance checker + warning
@@ -37,7 +37,7 @@ strat_resamp <- function(x, cls, p)
     data.frame(ind = seq(from = 1, to = nrow(x), by = 1), class = cls, x)
 
   p_ind <-
-    data.frame(dat_df %>% dplyr::group_by(class) %>% dplyr::sample_n(pn))$ind
+    data.frame(dat_df %>%  dplyr::group_by(class) %>% dplyr::sample_n(pn))$ind
 
   dpart <- list()
   dpart$train_cls <- cls[p_ind]

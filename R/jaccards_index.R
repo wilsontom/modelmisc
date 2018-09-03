@@ -5,6 +5,7 @@
 #' @param x a character vector
 #' @param y a character vector
 #' @return a numeric value for the Jaccard's Similiarity Coefficent
+#' @importFrom stats cmdscale na.omit predict qt sd
 #'
 #' @export
 
