@@ -13,8 +13,8 @@ r_packages:
   - covr
   - testthat
   - devtools
+  - e1071
   - caret
-
 
 after_success:
   - Rscript -e 'covr::codecov()'
