@@ -6,19 +6,21 @@ Date: 2018-01-06
 Author: Tom Wilson <tpw2@aber.ac.uk>
 Maintainer: Tom Wilson <tpw2@aber.ac.uk>
 Description: Wrapper and helpers for modelling.
+Depends:
+      ggplot2,
+      ggpubr
 Imports: 
+      magrittr,
       dplyr,
       caret,
       randomForest,
       AUC,
       HandTill2001,
-      ggplot2,
-      ggpubr,
       reshape2,
       viridis
 Suggests: 
-    testthat,
-    covr
+     testthat,
+     covr
 License: GPL (>=3)
 LazyData: TRUE
 RoxygenNote: 6.1.0
