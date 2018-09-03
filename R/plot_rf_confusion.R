@@ -15,7 +15,7 @@ plot_rf_confusion <- function(rf_model)
   melt_conf_mat <- reshape2::melt(conf_mat_perc, na.rm = TRUE)
 
   conf_plot <-
-    ggplot(data = melt_conf_mat, aes(Var2, Var1, fill = value)) +
+    ggplot(data = melt_conf_mat, aes_string('Var2', 'Var1', fill = 'value')) +
     geom_tile(color = "white") +
     scale_fill_gradient2(
       low = viridis::viridis(10)[1],
