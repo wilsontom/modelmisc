@@ -1,4 +1,5 @@
 
+
 context("feature stability")
 
 test_that("distances", {
@@ -17,23 +18,23 @@ test_that("distances", {
 
   expect_error(dice_sorensen(some_random_rank_a,some_random_rank_b))
   expect_error(dice_sorensen(some_random_vector_a,some_random_vector_b), NA)
-  expect_that(dice_sorensen(some_random_vector_a,some_random_vector_b), is_less_than(1))
-  expect_that(dice_sorensen(some_random_vector_a,some_random_vector_b), is_more_than(0))
+  expect_that(dice_sorensen(some_random_vector_a,some_random_vector_b), testthat::is_less_than(1))
+  expect_that(dice_sorensen(some_random_vector_a,some_random_vector_b), testthat::is_more_than(0))
 
   expect_error(jaccards_index(some_random_rank_a,some_random_rank_b))
   expect_error(jaccards_index(some_random_vector_a,some_random_vector_b), NA)
-  expect_that(jaccards_index(some_random_vector_a,some_random_vector_b), is_less_than(1))
-  expect_that(jaccards_index(some_random_vector_a,some_random_vector_b), is_more_than(0))
+  expect_that(jaccards_index(some_random_vector_a,some_random_vector_b), testthat::is_less_than(1))
+  expect_that(jaccards_index(some_random_vector_a,some_random_vector_b), testthat::is_more_than(0))
 
   expect_error(ochiais_index(some_random_rank_a,some_random_rank_b))
   expect_error(ochiais_index(some_random_vector_a,some_random_vector_b), NA)
-  expect_that(ochiais_index(some_random_vector_a,some_random_vector_b), is_less_than(1))
-  expect_that(ochiais_index(some_random_vector_a,some_random_vector_b), is_more_than(0))
+  expect_that(ochiais_index(some_random_vector_a,some_random_vector_b), testthat::is_less_than(1))
+  expect_that(ochiais_index(some_random_vector_a,some_random_vector_b), testthat::is_more_than(0))
 
   expect_error(hammings_distance(some_random_rank_a,some_random_rank_b,m = 27))
   expect_error(hammings_distance(some_random_vector_a,some_random_vector_b,m = 27), NA)
-  expect_that(hammings_distance(some_random_vector_a,some_random_vector_b,m = 27), is_less_than(1))
-  expect_that(hammings_distance(some_random_vector_a,some_random_vector_b,m = 27), is_more_than(0))
+  expect_that(hammings_distance(some_random_vector_a,some_random_vector_b,m = 27), testthat::is_less_than(1))
+  expect_that(hammings_distance(some_random_vector_a,some_random_vector_b,m = 27), testthat::is_more_than(0))
 
   expect_error(RPT(some_random_vector_a,some_random_vector_b,beta = 1))
   expect_error(RPT(some_random_rank_a,some_random_rank_b,beta = 1))

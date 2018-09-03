@@ -8,7 +8,7 @@ test_that("helpers", {
   pca_ob <- prcomp(iris[,-5], scale = TRUE)
 
   expect_true(is.numeric((variance_exp(pca_ob))))
-  expect_that(length(variance_exp(pca_ob)), equals(length(pca_ob$sdev)))
+  expect_that(length(variance_exp(pca_ob)), testthat::equals(length(pca_ob$sdev)))
   expect_error(variance_exp(iris[,-5]))
 
   #RF Prox
