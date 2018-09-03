@@ -13,7 +13,7 @@ Imports:
       AUC,
       HandTill2001,
       ggplot2,
-      ggpubr.
+      ggpubr,
       reshape2,
       viridis
 Suggests: 
