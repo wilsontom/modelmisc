@@ -20,7 +20,8 @@ Imports:
       viridis
 Suggests: 
      testthat,
-     covr
+     covr,
+     e1071
 License: GPL (>=3)
 LazyData: TRUE
 RoxygenNote: 6.1.0
