@@ -24,4 +24,4 @@ Suggests:
      e1071
 License: GPL (>=3)
 LazyData: TRUE
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
